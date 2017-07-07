@@ -1,15 +1,7 @@
 var myImage = document.querySelector('img');
-var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
 usestoredName();
-
-myButton.onclick = function() {
-  setUserName();
-}
-
-
-
 
 myImage.onclick = function() {
       var mySrc = myImage.getAttribute('src');
