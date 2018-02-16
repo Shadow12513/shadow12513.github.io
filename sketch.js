@@ -1,6 +1,5 @@
 var Bird
 var pipes = [];
-var updaterate = 90;
 var im_character;
 
 function setup() {
@@ -33,7 +32,6 @@ function draw() {
 
   if (frameCount % 40  == 0) {
     pipes.push(new Pipe());
-    this.updaterate --
   }
 
 
