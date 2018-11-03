@@ -1,0 +1,190 @@
+$backgroundblue: #e1f2fe
+$goodblack: #2b303a
+$goodorange: #ef8354
+$navgray: #bfc0c0
+
+@media only all and (min-width: 992px)
+  .wrapper
+    margin: auto
+    width: 992px
+
+
+
+@media only all and (min-width: 768px)
+  .wrapper
+    margin: auto
+    width: 768px
+
+
+  main
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+
+
+  nav
+    height: 50px
+    line-height: 40px
+    margin: 5px 0
+
+    ul
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+      grid-template-rows: 50px
+      padding: 0
+
+      li
+        border-right: 1px solid $goodblack
+        height: 75%
+        margin: auto
+        width: 100%
+
+        last-child
+          border-right: 0
+
+.image1
+  grid-column: 1
+  grid-row: 1
+  height: auto
+  margin: 0 auto auto 0
+  width: 95%
+
+.par1
+  grid-column: 2
+  grid-row: 1
+  margin: 0 0 0 auto
+  width: 95%
+
+.image2
+  grid-column: 2
+  grid-row: 2
+  height: auto
+  margin: auto 0 0 auto
+  width: 95%
+
+.par2
+  grid-column: 1
+  grid-row: 2
+  width: 95%
+
+.bottomtext
+  border-top: solid $goodblack 1px
+  grid-column: 1 / span 2
+  grid-row: 3
+  margin: 5px 0
+  text-align: center
+
+  p
+    margin: 0 0 5px
+
+@media only all and (max-width: 768px)
+  .wrapper
+    margin: auto
+    width: 100%
+
+
+  nav
+    line-height: 25px
+
+
+    ul
+      padding: 0
+
+
+      li
+        border-bottom: 1px solid $goodblack
+        width: 100%
+
+
+      :first-child
+        border-top: 1px solid $goodblack
+
+
+  main
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: 1fr .3fr 1fr .3fr
+
+
+  .image1
+    grid-column: 1
+    grid-row: 1
+    height: auto
+    margin: auto
+    width: 75%
+
+
+  .par1
+    grid-column: 1
+    grid-row: 2
+    margin: 0 auto
+    text-align: center
+    width: 65%
+
+
+
+  .image2
+    grid-column: 1
+    grid-row: 3
+    height: auto
+    margin: auto
+    width: 75%
+
+  .par2
+    grid-column: 1
+    grid-row: 4
+    margin: 0 auto
+    text-align: center
+    width: 65%
+
+
+  .bottomtext
+    border-top: solid $goodblack 1px
+    font-size: smaller
+    grid-column: 1
+    grid-row: 5
+    margin: 5px auto
+    text-align: center
+
+    p
+      margin: 0 0 5px
+
+html
+  background-color: $backgroundblue
+  font-family: sans-serif
+
+body
+  color: $goodblack
+
+h1
+  border-bottom: solid $goodblack
+  color: $goodorange
+  height: 50px
+  text-align: center
+
+
+h3
+  color: $goodorange
+
+
+nav
+  background-color: $navgray
+  text-align: center
+
+  ul
+    list-style-type: none
+
+
+    li
+      display: inline-block
+
+
+      a
+        color: $goodorange
+        text-decoration: none
+
+footer
+  background-color: $goodorange
+  display: inline-block
+  text-align: center
+  width: 100%
