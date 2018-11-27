@@ -146,15 +146,17 @@ $navgray: #bfc0c0
 
     img
       margin: auto
-      padding-top: 1em
       padding-bottom: 1em
+      padding-top: 1em
+
 
 
   .abouttext
     grid-column: 1 / span 2
     grid-row: 2
-    margin-top: 1em
     margin-bottom: 1em
+    margin-top: 1em
+
 
 
   .aboutimage
@@ -170,15 +172,17 @@ $navgray: #bfc0c0
   .locationtext
     grid-column: 2 / span 3
     grid-row: 3
-    margin-top: 1em
     margin-bottom: 1em
+    margin-top: 1em
+
 
 
   .ownertext
     grid-column: 1 / span 2
     grid-row: 4
-    margin-top: 1em
     margin-bottom: 1em
+    margin-top: 1em
+
 
 
   .ownerimage
@@ -203,8 +207,9 @@ $navgray: #bfc0c0
       li
         border-bottom: 1px solid $goodblack
         width: 100%
+
         &:last-child
-          border-bottom: none
+          border-bottom: 0
 
   p
     margin: 0 0 5px
@@ -301,8 +306,8 @@ $navgray: #bfc0c0
 
     p
       grid-column: 1
-      margin-top: 1em
       margin-bottom: 2em
+      margin-top: 1em
 
     img
       grid-column: 1
@@ -314,12 +319,9 @@ $navgray: #bfc0c0
       margin: auto
       padding-bottom: 2em
 
-
-//Main shit
 html
   background-color: $backgroundblue
   font-family: sans-serif
-  cursor: none
 
 body
   color: $goodblack
@@ -342,8 +344,10 @@ textarea
 
 form
   margin-bottom: 1em
+
   input
     width: 100%
+
   textarea
     width: 100%
 
@@ -358,6 +362,7 @@ nav
 
     li
       display: inline-block
+
       &:hover
         background-color: darken($navgray, 10%)
 
@@ -410,8 +415,9 @@ footer
 
 .aboutcontent
   h3
-    text-align: center
     margin: auto
+    text-align: center
+
   p
     padding: 1em
 
