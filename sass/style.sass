@@ -8,15 +8,13 @@ $navgray: #bfc0c0
     margin: auto
     width: 992px
 
-
-
 @media only all and (min-width: 768px)
   .wrapper
     margin: auto
     width: 768px
 
 
-  main
+  .homecontent
     display: grid
     grid-template-columns: 1fr 1fr
     grid-template-rows: 1fr 1fr
@@ -33,49 +31,160 @@ $navgray: #bfc0c0
       grid-template-rows: 50px
       padding: 0
 
+      :last-child
+        border-right: 0
+
       li
         border-right: 1px solid $goodblack
         height: 75%
         margin: auto
         width: 100%
 
-        last-child
-          border-right: 0
 
-.image1
-  grid-column: 1
-  grid-row: 1
-  height: auto
-  margin: 0 auto auto 0
-  width: 95%
+  .image1
+    grid-column: 1
+    grid-row: 1
+    height: auto
+    margin: 0 auto auto 0
+    width: 95%
 
-.par1
-  grid-column: 2
-  grid-row: 1
-  margin: 0 0 0 auto
-  width: 95%
+  .par1
+    grid-column: 2
+    grid-row: 1
+    margin: 0 0 0 auto
+    width: 95%
 
-.image2
-  grid-column: 2
-  grid-row: 2
-  height: auto
-  margin: auto 0 0 auto
-  width: 95%
+  .image2
+    grid-column: 2
+    grid-row: 2
+    height: auto
+    margin: auto 0 0 auto
+    width: 95%
 
-.par2
-  grid-column: 1
-  grid-row: 2
-  width: 95%
+  .par2
+    grid-column: 1
+    grid-row: 2
+    width: 95%
 
-.bottomtext
-  border-top: solid $goodblack 1px
-  grid-column: 1 / span 2
-  grid-row: 3
-  margin: 5px 0
-  text-align: center
+  .bottomtext
+    border-top: solid $goodblack 1px
+    grid-column: 1 / span 2
+    grid-row: 3
+    margin: 5px 0
+    text-align: center
 
   p
     margin: 0 0 5px
+
+  .appointmentcontent
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr .5fr .5fr 2fr
+
+  .apptbanner
+    grid-column: 1 / span 2
+
+  .apptheader
+    grid-column: 1 / span 2
+
+  .appttext
+    grid-column: 1 / span 2
+
+  .pricingcontent
+    h2
+      margin-bottom: 1em
+      text-align: center
+
+  .item
+    background-color: $navgray
+    border: 1px solid
+    border-radius: 10px
+    display: grid
+    grid-template-columns: 3fr 7fr
+    height: 250px
+    margin: 0 0 2em
+    width: 100%
+
+
+
+    img
+      grid-column: 1
+      grid-row: 1 / span 3
+      margin: auto
+      width: 90%
+
+
+    h3
+      grid-column: 2
+      grid-row: 1
+      margin: auto
+
+    p
+      grid-column: 2
+      grid-row: 2
+
+    h2
+      grid-column: 2
+      grid-row: 3
+      margin: 0
+      padding-right: 1em
+      text-align: right
+
+
+
+  .aboutheader
+    grid-column: 1 / span 3
+    grid-row: 1
+
+  .aboutcontent
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: .3fr 1fr 1fr 1fr
+
+    p
+      padding: 1em
+
+    img
+      margin: auto
+      padding-top: 1em
+      padding-bottom: 1em
+
+
+  .abouttext
+    grid-column: 1 / span 2
+    grid-row: 2
+    margin-top: 1em
+    margin-bottom: 1em
+
+
+  .aboutimage
+    grid-column: 3
+    grid-row: 2
+
+
+  .mapouter
+    grid-column: 1
+    grid-row: 3
+
+
+  .locationtext
+    grid-column: 2 / span 3
+    grid-row: 3
+    margin-top: 1em
+    margin-bottom: 1em
+
+
+  .ownertext
+    grid-column: 1 / span 2
+    grid-row: 4
+    margin-top: 1em
+    margin-bottom: 1em
+
+
+  .ownerimage
+    grid-column: 3
+    grid-row: 4
+
 
 @media only all and (max-width: 768px)
   .wrapper
@@ -94,17 +203,60 @@ $navgray: #bfc0c0
       li
         border-bottom: 1px solid $goodblack
         width: 100%
+        &:last-child
+          border-bottom: none
+
+  p
+    margin: 0 0 5px
+
+  .pricingcontent
+    h2
+      margin-bottom: 1em
+      text-align: center
 
 
-      :first-child
-        border-top: 1px solid $goodblack
+  .item
+    background-color: $navgray
+    border: 1px solid
+    border-radius: 10px
+    display: grid
+    grid-template-columns: 3fr 7fr
+    height: 250px
+    margin: 0 0 2em
+    width: 100%
 
 
-  main
+
+    img
+      grid-column: 1
+      grid-row: 1 / span 3
+      margin: auto
+      width: 90%
+
+
+    h3
+      grid-column: 2
+      grid-row: 1
+      margin: auto
+
+    p
+      grid-column: 2
+      grid-row: 2
+
+    h2
+      grid-column: 2
+      grid-row: 3
+      margin: 0
+      padding-right: 1em
+      text-align: right
+
+
+
+    //home
+  .homecontent
     display: grid
     grid-template-columns: 100%
     grid-template-rows: 1fr .3fr 1fr .3fr
-
 
   .image1
     grid-column: 1
@@ -113,15 +265,12 @@ $navgray: #bfc0c0
     margin: auto
     width: 75%
 
-
   .par1
     grid-column: 1
     grid-row: 2
     margin: 0 auto
     text-align: center
     width: 65%
-
-
 
   .image2
     grid-column: 1
@@ -137,7 +286,6 @@ $navgray: #bfc0c0
     text-align: center
     width: 65%
 
-
   .bottomtext
     border-top: solid $goodblack 1px
     font-size: smaller
@@ -146,12 +294,32 @@ $navgray: #bfc0c0
     margin: 5px auto
     text-align: center
 
-    p
-      margin: 0 0 5px
+  .aboutcontent
+    display: grid
+    grid-template-columns: 1fr
+    text-align: center
 
+    p
+      grid-column: 1
+      margin-top: 1em
+      margin-bottom: 2em
+
+    img
+      grid-column: 1
+      margin: auto
+      padding-bottom: 2em
+
+    .mapouter
+      grid-column: 1
+      margin: auto
+      padding-bottom: 2em
+
+
+//Main shit
 html
   background-color: $backgroundblue
   font-family: sans-serif
+  cursor: none
 
 body
   color: $goodblack
@@ -162,13 +330,26 @@ h1
   height: 50px
   text-align: center
 
+h2
+  color: $goodorange
 
 h3
   color: $goodorange
 
+textarea
+  overflow: auto
+  resize: none
+
+form
+  margin-bottom: 1em
+  input
+    width: 100%
+  textarea
+    width: 100%
 
 nav
   background-color: $navgray
+  border-radius: 2px
   text-align: center
 
   ul
@@ -177,7 +358,8 @@ nav
 
     li
       display: inline-block
-
+      &:hover
+        background-color: darken($navgray, 10%)
 
       a
         color: $goodorange
@@ -188,3 +370,50 @@ footer
   display: inline-block
   text-align: center
   width: 100%
+
+//Appointments
+.apptbanner
+  width: 100%
+
+.hourstable
+  display: grid
+  grid-template-columns: 1fr 1fr
+  margin: auto
+  width: 80%
+
+
+.booking
+  margin: auto
+  width: 80%
+
+.hourstabledays
+  text-align: left
+
+.hourstablehours
+  text-align: right
+
+.appointmentcontent
+  h3
+    text-align: center
+
+.apptheader
+  border-bottom: solid $navgray
+  text-align: center
+
+.aboutheader
+  border-bottom: solid $navgray
+  text-align: center
+
+.faqheader
+  border-bottom: solid $navgray
+  text-align: center
+
+.aboutcontent
+  h3
+    text-align: center
+    margin: auto
+  p
+    padding: 1em
+
+.faqcontent
+  padding-bottom: 1em
